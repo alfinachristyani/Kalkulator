@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KALKULATOR"
+        android:textSize="30dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textAlignment="center"
+        android:background="@color/purple_200"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ANGKA 1 :"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/angka1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ANGKA 2 :"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/angka2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/tombolHitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            android:onClick="hitung"/>
+
+        <Button
+            android:id="@+id/tombolKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="7dp"
+            android:textSize="30dp"
+            android:onClick="kurang"/>
+
+        <Button
+            android:id="@+id/tombolKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="7dp"
+            android:textSize="30dp"
+            android:onClick="kali"/>
+
+        <Button
+            android:id="@+id/tombolBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="7dp"
+            android:textSize="30dp"
+            android:onClick="bagi"/>
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/tombolHitung"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="+"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textSize="30dp"-->
+<!--        android:onClick="hitung"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/hasilHitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HASIL"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</LinearLayout>
